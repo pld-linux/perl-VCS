@@ -7,6 +7,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
+# Source0-md5:	7995cb3db8f1149e15ca771d212466d9
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
