@@ -2,9 +2,9 @@
 Summary:	VCS perl module
 Summary(pl):	Modu³ perla VCS
 Name:		perl-VCS
-Version:	0.02
-Release:	3
-Copyright:	GPL
+Version:	0.03
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/VCS/VCS-%{version}.tar.gz
@@ -30,11 +30,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-cp -ar examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+cp -ar examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/VCS
@@ -58,4 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+/usr/src/examples/%{name}
