@@ -3,7 +3,7 @@ Summary:	VCS perl module
 Summary(pl):	Modu³ perla VCS
 Name:		perl-VCS
 Version:	0.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
