@@ -6,13 +6,13 @@
 Summary:	VCS perl module
 Summary(pl):	Modu³ Perla VCS
 Name:		perl-VCS
-Version:	0.13
-Release:	2
+Version:	0.14
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
-# Source0-md5:	0010403ee9cd69d19286a84f73e53847
+# Source0-md5:	5b98aa1132062ddcb455a930f85238bd
 %if %{with tests}
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	rcs
