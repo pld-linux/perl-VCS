@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	VCS perl module
-Summary(pl):	Modu³ perla VCS
+Summary(pl):	Modu³ Perla VCS
 Name:		perl-VCS
 Version:	0.13
 Release:	2
@@ -27,7 +27,7 @@ VCS - Library for generic Version Control System access in Perl.
 
 %description -l pl
 VCS - biblioteka umo¿liwiaj±ca dostêp do systemu kontroli wersji (VCS)
-z poziomu perla.
+z poziomu Perla.
 
 %prep
 %setup -q -n VCS-%{version}
