@@ -32,7 +32,7 @@ respective "container" classes.
 
 %description -l pl
 VCS stanowi API dla abstrakcyjnego dostêpu z kodu w Perlu do wszelkich
-systemów kontroli wersji. Osi±ga siê to W podobny sposób, jak w
+systemów kontroli wersji. Osi±ga siê to w podobny sposób, jak w
 zestawie modu³ów DBI. Istniej± klasy "pojemników": VCS::Dir, VCS::File
 i VCS::Version oraz klasy "implementacji", takie jak: VCS::Cvs::Dir,
 VCS::Cvs::File i VCS::Cvs::Version, bêd±ce podklasami swoich
