@@ -2,12 +2,12 @@
 Summary:	VCS perl module
 Summary(pl):	Modu³ perla VCS
 Name:		perl-VCS
-Version:	0.10
+Version:	0.13
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
-# Source0-md5:	7995cb3db8f1149e15ca771d212466d9
+# Source0-md5:	0010403ee9cd69d19286a84f73e53847
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -25,7 +25,7 @@ z poziomu perla.
 %setup -q -n VCS-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL INSTALLDIRS=vendor
 %{__make}
 
 %install
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/diff-hist
-%{perl_sitelib}/VCS.pm
-%{perl_sitelib}/VCS
+%{perl_vendorlib}/VCS.pm
+%{perl_vendorlib}/VCS
 %{_mandir}/man[13]/*
 %{_examplesdir}/%{name}-%{version}
