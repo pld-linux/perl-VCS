@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	rcs
 %endif
-BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
