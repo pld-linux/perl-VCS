@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (needs working, not busy /dev/audio!)
 #
 %include	/usr/lib/rpm/macros.perl
-Summary:	VCS perl module
-Summary(pl):	Modu³ Perla VCS
+Summary:	VCS - library for generic Version Control System access in Perl
+Summary(pl):	VCS - biblioteka umo¿liwiaj±ca dostêp do systemu kontroli wersji (VCS) z poziomu Perla
 Name:		perl-VCS
 Version:	0.14
 Release:	1
@@ -23,11 +23,20 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-VCS - Library for generic Version Control System access in Perl.
+VCS is an API for abstracting access to all version control systems
+from Perl code. This is achieved in a similar fashion to the DBI suite
+of modules. There are "container" classes, VCS::Dir, VCS::File, and
+VCS::Version, and "implementation" classes, such as VCS::Cvs::Dir,
+VCS::Cvs::File, and VCS::Cvs::Version, which are subclasses of their
+respective "container" classes.
 
 %description -l pl
-VCS - biblioteka umo¿liwiaj±ca dostêp do systemu kontroli wersji (VCS)
-z poziomu Perla.
+VCS stanowi API dla abstrakcyjnego dostêpu z kodu w Perlu do wszelkich
+systemów kontroli wersji. Osi±ga siê to W podobny sposób, jak w
+zestawie modu³ów DBI. Istniej± klasy "pojemników": VCS::Dir, VCS::File
+i VCS::Version oraz klasy "implementacji", takie jak: VCS::Cvs::Dir,
+VCS::Cvs::File i VCS::Cvs::Version, bêd±ce podklasami swoich
+odpowiednich klas "pojemników".
 
 %prep
 %setup -q -n VCS-%{version}
