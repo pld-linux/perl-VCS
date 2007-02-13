@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	VCS - library for generic Version Control System access in Perl
-Summary(pl.UTF-8):   VCS - biblioteka umożliwiająca dostęp do systemu kontroli wersji (VCS) z poziomu Perla
+Summary(pl.UTF-8):	VCS - biblioteka umożliwiająca dostęp do systemu kontroli wersji (VCS) z poziomu Perla
 Name:		perl-VCS
 Version:	0.14
 Release:	1
