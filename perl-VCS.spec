@@ -6,13 +6,13 @@
 Summary:	VCS - library for generic Version Control System access in Perl
 Summary(pl.UTF-8):	VCS - biblioteka umożliwiająca dostęp do systemu kontroli wersji (VCS) z poziomu Perla
 Name:		perl-VCS
-Version:	0.14
-Release:	2
+Version:	0.16
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
-# Source0-md5:	5b98aa1132062ddcb455a930f85238bd
+# Source0-md5:	5e3965ef83514629fe2fbc6da3f1eb66
 %if %{with tests}
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	rcs
