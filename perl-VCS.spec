@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (needs working, not busy /dev/audio!)
-#
+
+%define		pdir	VCS
 %include	/usr/lib/rpm/macros.perl
 Summary:	VCS - library for generic Version Control System access in Perl
 Summary(pl.UTF-8):	VCS - biblioteka umożliwiająca dostęp do systemu kontroli wersji (VCS) z poziomu Perla
@@ -13,12 +14,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/VCS/VCS-%{version}.tar.gz
 # Source0-md5:	5e3965ef83514629fe2fbc6da3f1eb66
+URL:		http://search.cpan.org/dist/VCS/
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 %if %{with tests}
 BuildRequires:	perl-Sort-Versions
 BuildRequires:	rcs
 %endif
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
